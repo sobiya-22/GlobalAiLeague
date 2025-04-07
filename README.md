@@ -11,9 +11,9 @@
 
 ## 🧠 About the Project
 
-**Global AI League** is a multi-agent system that simulates a decentralized team of AI agents working in sync to answer complex queries. Each agent handles a unique task — from scraping and cleaning data to performing exploratory analysis and generating a final Gemini-powered response.
+**Global AI League** This project is an intelligent multi-agent system designed to automate the entire data analysis pipeline using the uAgents framework by Fetch.ai. At its core, the system features a network of lightweight agents—each dedicated to a specific task like prompting, scraping, cleaning, exploring, modeling, and reporting. It simulates a collaborative workflow where AI agents communicate asynchronously to transform a raw query into structured data insights.
 
-This project showcases the power of modular, distributed AI workflows using the [uAgents framework](https://docs.fetch.ai/uAgents/) by Fetch.ai, enhanced with Gemini’s natural language reasoning.
+This project showcases the power of modular, distributed AI workflows using the [uAgents framework](https://docs.fetch.ai/uAgents/) by Fetch.ai. This architecture not only demonstrates modular AI collaboration but also aligns with decentralized agent-based design principles. It mimics how specialized team members would work together—except here, it's fully automated and extensible.
 
 ---
 
@@ -23,7 +23,6 @@ This project showcases the power of modular, distributed AI workflows using the 
 - 🧹 Intelligent text preprocessing & deduplication
 - 📊 Exploratory Data Analysis: keyword/entity extraction
 - 🤖 Lightweight ML model (RandomForest) for trend discovery
-- 💬 Gemini-based smart assistant final response
 - 🧩 Fully modular, decoupled architecture with 6 specialized agents
 
 ---
