@@ -53,7 +53,6 @@ Report Agent
 - 🌐 **Scraping**: `requests`, Google Programmable Search API, SerpAPI
 - 🧼 **Text Cleaning**: `pandas`, `re`, `nltk`
 - 📊 **ML Model**: `scikit-learn` (RandomForestRegressor)
-- 💬 **LLM**: Google Gemini API (generativelanguage.googleapis.com)
 - 🔐 **Secrets**: `.env` with `python-dotenv`
 
 ---
