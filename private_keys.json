@@ -1,0 +1,26 @@
+{
+    "prompt_agent": {
+        "identity_key": "a591a78e5fb4b913f8d492aa0d722e00d75b040ddfedf939fce0bdfcb1d67189",
+        "wallet_key": "PVxM10ujB/t+GDnMl9UcnQF9uV6sihWul3YsUyG5Ytc="
+    },
+    "scraper_agent": {
+        "identity_key": "b0562851d842c8fc1c45f5cfa0f565d640aef1ef9905526bd4e4d4aa5039adf6",
+        "wallet_key": "yzlrvGmQ+I1yRE8Og+qUBrUq/troNEHYJJuMOP7cYog="
+    },
+    "data_cleaning_agent": {
+        "identity_key": "485e51692993f3b9e357cf48262e749391ee89dafdad97dae0708b4a53fdde35",
+        "wallet_key": "/CZmTrgOACYJSVEYUtLMIHy1biiTWpyhmQvRUlR+3q4="
+    },
+    "eda_agent": {
+        "identity_key": "131067d9b3ff1596482b3fd17e556529b0dc531e7fdd862fde3cfe00db54c05b",
+        "wallet_key": "z5pz0jlKxbK36L6W/7m9UHc3yH4ibP3XfjT/MFIECP0="
+    },
+    "model_training_agent": {
+        "identity_key": "0889a5f7b235d4527b37990e38046b696022dc195e2a8ab5cbaf567526fc78dd",
+        "wallet_key": "iebd17qQu6UA7DKL1ul1974xFFUvRyGYxnTMdQr8nKw="
+    },
+    "report_agent": {
+        "identity_key": "7c9d9dfa73c8bf8b4fe4d8669fae65af23366cb3b51c466b244fa0db7565bebd",
+        "wallet_key": "lGtk7wlzeemwqcmNWpMPhUS70j8kWcGINNYAcoqxbWo="
+    }
+}
