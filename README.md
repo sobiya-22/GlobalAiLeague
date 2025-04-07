@@ -19,3 +19,33 @@ User Input → Prompt Agent
     Model Training Agent (Dummy ML for insight)
             ↓
        Report Agent (Final Gemini-based Answer)
+
+Each agent communicates independently using Pydantic-based message schemas over uAgents.
+
+---
+
+## 📦 Tech Stack
+
+| Component        | Tool/Library                    |
+|------------------|----------------------------------|
+| Agent Framework  | `uAgents` (Fetch.ai)            |
+| Scraping         | Google Custom Search, SerpAPI   |
+| NLP & EDA        | Regex, Entity Extraction        |
+| ML Model         | Scikit-learn (RandomForest)     |
+| AI Completion    | Gemini API (Google AI)          |
+| Language         | Python 3.10+                    |
+
+---
+
+## ⚙️ Setup Instructions
+
+```bash
+# Clone the repo
+git clone https://github.com/SarthSatpute/GlobalAiLeague.git
+cd GlobalAiLeague
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the system
+python main.py
