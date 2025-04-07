@@ -2,8 +2,8 @@
 
 # 🌐 Global AI League — Multi-Agent AI Pipeline for Intelligent Insight ⚙️🧠
 
-> **Agentic Workflow Completed · Gemini Integration Live**  
-> ✅ This is the completed implementation of a multi-agent system built with Fetch.ai's uAgents. Fully functional end-to-end AI pipeline with real-time scraping, EDA, and Gemini-powered Q&A.
+> **Agentic Workflow Completed**  
+> ✅ This is the completed implementation of a multi-agent system built with Fetch.ai's uAgents. Fully functional end-to-end AI pipeline.
 
 🔗 **GitHub Repo**: [https://github.com/SarthSatpute/GlobalAiLeague](https://github.com/SarthSatpute/GlobalAiLeague)
 
