@@ -1,39 +1,48 @@
 import asyncio
 import logging
-from uagents import Bureau, Agent
-from data_schemas import QueryMessage
+from uagents import Bureau
 from agents import (
-    prompt_agent, scraper_agent, data_cleaning_agent,
-    eda_agent, model_training_agent, report_agent
+    prompt_agent,
+    scraper_agent,
+    data_cleaning_agent,
+    eda_agent,
+    model_training_agent,
+    report_agent,
+    setup_ai_tools,
+    analysis_results
 )
+from data_schemas import QueryMessage
 
-# Enable debug logging
-logging.basicConfig(level=logging.DEBUG)
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
 
-# Initialize Bureau (container for all agents)
-bureau = Bureau()
+def main():
+    setup_ai_tools()
 
-# Register all agents
-bureau.add(prompt_agent)
-bureau.add(scraper_agent)
-bureau.add(data_cleaning_agent)
-bureau.add(eda_agent)
-bureau.add(model_training_agent)
-bureau.add(report_agent)
+    query = input("Enter your search query (e.g., 'Cricket trends in 2025'): ").strip()
+    if not query:
+        query = "Cricket trends in 2025"
+    
+    analysis_results["query"] = query
 
-# Test Agent to trigger the pipeline
-test_agent = Agent(name="test_agent")
+    bureau = Bureau()
 
-@test_agent.on_event("startup")
-async def send_message(ctx):
-    await asyncio.sleep(3)  # Ensure agents have started before sending message
-    message = QueryMessage(query="Cricket trends in 2025")
-    print(f"[test_agent] Sending initial query: {message.query}")
-    await ctx.send(prompt_agent.address, message)
+    # Register all agents
+    bureau.add(prompt_agent)
+    bureau.add(scraper_agent)
+    bureau.add(data_cleaning_agent)
+    bureau.add(eda_agent)
+    bureau.add(model_training_agent)
+    bureau.add(report_agent)
 
-bureau.add(test_agent)
+    logger.info("Starting agent bureau...")
 
-# Run all agents asynchronously
-if __name__ == "__main__":
-    print("[main.py] Starting Bureau with all agents...")
+    # 🟢 THIS LINE IS MISSING IN YOUR VERSION
     bureau.run()
+
+if __name__ == "__main__":
+    main()
