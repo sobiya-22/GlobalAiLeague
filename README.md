@@ -2,6 +2,8 @@
 
 # 🌐 Global AI League — Multi-Agent AI Pipeline for Intelligent Insight ⚙️🧠
 
+![tag : innovationlab](https://img.shields.io/badge/innovationlab-3D8BD3)
+
 > **Agentic Workflow Completed**  
 > ✅ This is the completed implementation of a multi-agent system built with Fetch.ai's uAgents. Fully functional end-to-end AI pipeline.
 
