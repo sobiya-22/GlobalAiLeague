@@ -1,8 +1,0 @@
-uagents==0.8.1
-requests
-google-api-python-client
-serpapi
-pandas
-scikit-learn
-python-dotenv
-google-generativeai
