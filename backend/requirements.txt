@@ -1,8 +1,9 @@
 fastapi==0.104.1
 uvicorn==0.20.0
-uagents
-scikit-learn<1.5
+uagents==0.7.0
+scikit-learn==1.4.2
+numpy==1.26.4
+scipy==1.13.1
 google-generativeai==0.3.2
 requests==2.31.0
 python-multipart==0.0.6
-requests
