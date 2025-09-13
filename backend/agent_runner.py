@@ -6,17 +6,17 @@ from typing import Dict, Any, Callable
 import requests
 import re
 import google.generativeai as genai
-
+import os
 # Import the analysis_results from real_agents
 from real_agents import analysis_results
 
 logger = logging.getLogger(__name__)
 
 # API Configuration
-SERP_API_KEY = "3c477edb40b151ad0150967fb244a217279aeb3c168444275988b30eb84ea269"
-GOOGLE_API_KEY = "AIzaSyDoM2I7S0CTAxEYxQrIRMID2-z-ccm_VTs"
-CX_ID = "94f754d57a90b4778"
-GEMINI_API_KEY = "AIzaSyDhZMxtAs2-PzrHQAHmskaa4M2VMBtmPf0"
+SERP_API_KEY = os.getenv("SERP_API_KEY")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+CX_ID = os.getenv("CX_ID")
+GEMINI_API_KEY =os.getenv("GEMINI_API_KEY")
 
 # Configure Gemini
 genai.configure(api_key=GEMINI_API_KEY)
